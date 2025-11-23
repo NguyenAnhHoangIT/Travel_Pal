@@ -88,9 +88,9 @@ export const EventCard: React.FC<EventCardProps> = ({ event, date, onReject, onR
 
           {/* Notes Section */}
           {event.notes && (
-            <div className="mt-2 p-2 bg-blue-50 rounded-lg border border-blue-100 flex items-start gap-2 mb-3">
-              <Info className="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" />
-              <p className="text-xs text-blue-800">{event.notes}</p>
+            <div style={{ marginTop: '0.5rem', padding: '0.5rem', backgroundColor: '#EFF6FF', borderRadius: '0.5rem', border: '1px solid #DBEAFE', display: 'flex', alignItems: 'flex-start', gap: '0.5rem', marginBottom: '0.75rem' }}>
+              <Info style={{ width: '1rem', height: '1rem', color: '#2563EB', marginTop: '0.125rem', flexShrink: 0 }} />
+              <p style={{ fontSize: '0.75rem', lineHeight: '1rem', color: '#1E40AF' }}>{event.notes}</p>
             </div>
           )}
 
